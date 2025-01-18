@@ -43,3 +43,18 @@
     }).catchError((err) {
       throw err;
     });
+
+
+    // OTRA FORMA
+    var match = {
+  "homeTeam": {"team": "Team A"},
+  "awayTeam": {"team": "Team B"}
+};
+
+var response = await post(Uri.parse(url),
+    headers: {
+      "Accept": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: match,
+    encoding: Encoding.getByName("utf-8"));

@@ -1,5 +1,9 @@
 
+// INSTALACION
+  - flutter pub add shared_preferences
+  - shared_preferences: ^2.0.20
 
+// USO
 // en main.dart
 import 'package:flutter/material.dart';
 import 'package:preferencias_de_usuario/shared/shared_lang.dart';
